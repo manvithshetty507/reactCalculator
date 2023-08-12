@@ -1,0 +1,82 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.calculator {
+  height:fit-content;
+  width: 25%;
+  border: 1px solid red;
+  box-shadow: 
+    0px 0px 100px 0px rgba(179, 75, 156, 0.5), /* Fading pink on bottom */
+    -10px 0px 100px -3px rgba(58, 1, 58, 0.623), /* Purple on left */
+    10px 0px 100px -3px rgba(231, 139, 231, 0.5), /* Purple on right */
+    0px -10px 100px -3px rgba(61, 1, 61, 0.644); /* Purple on top */
+}
+
+h1 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.767);;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  margin: 10px 50px 10px 50px;
+  padding: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  font-weight: 800;
+  color: black;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.buttons {
+  height: 40px;
+  margin: 5px 50px 35px 50px;
+}
+
+button {
+  height: 100%;
+  width: 40px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  margin: 5px 10px 5px 10px;
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+}
+
+.results {
+  text-align: center;
+}
+
+.status {
+  margin: 15px;
+}
+
+.message {
+  margin: 15px;
+}
+
+.Success {
+  color: blue;
+  font-weight: 700;
+}
+
+.Error {
+  color: red;
+  font-weight: 700;
+}
